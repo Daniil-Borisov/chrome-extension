@@ -1,0 +1,75 @@
+.iffy-close-button{
+  position: absolute!important;
+}
+
+#iffy-frame{
+  display: block !important;
+}
+
+.iffy-login{
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .iffy-login__wrapper{
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 35px ;
+
+    .iffy-iffy-logo {
+      width: 168px;
+      padding: 20px;
+    }
+
+    p{
+      text-align: center;
+      font-family: 'Work Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .iffy-btnWrapper{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .iffy-loginButton{
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 263px;
+    height: 50px;
+    margin-bottom: 10px;
+   span{
+     color: #000000;
+     font-weight: 600;
+     font-size: 13px;
+     line-height: 16px;
+     text-transform: none;
+   }
+    img{
+      width: 19px;
+      height: 19px;
+      margin-right: 10px;
+    }
+  }
+
+  .iffy-facebookBtn{
+    background: #246BFD;
+
+    span{
+      color: #fff;
+    }
+  }
+}
+
+#iffy-frame{
+  border: 1px solid transparent;
+}

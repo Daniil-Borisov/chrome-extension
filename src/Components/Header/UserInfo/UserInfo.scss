@@ -1,0 +1,33 @@
+.iffy-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  border-top: 1px solid #F3F5F9;
+  box-sizing: border-box;
+
+  &:hover{
+    background: #F3F5F9;
+  }
+
+  img{
+    margin-left: 15px;
+  }
+
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  strong{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 15px;
+  }
+}

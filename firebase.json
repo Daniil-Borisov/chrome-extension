@@ -1,0 +1,49 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {
+    "hosting": {
+      "host": "localhost",
+      "port": 3011
+    },
+    "firestore": {
+      "host": "localhost",
+      "port": 8083
+    },
+    "database": {
+      "host": "localhost",
+      "port": 9003
+    },
+    "functions": {
+      "host": "localhost",
+      "port": 5003
+    },
+    "ui": {
+      "enabled": true
+    }
+  },
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  }
+}

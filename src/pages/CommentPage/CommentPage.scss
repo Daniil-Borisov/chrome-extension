@@ -1,0 +1,309 @@
+@import "../../Assets/css/scss/Variables.scss";
+
+$container_width: 344px;
+$comment_font_color: #2d2d2d;
+
+.iffy-commentPage {
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - 42px - 48px);
+  top: 42px;
+}
+
+.iffy-commentCardRoot {
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+.iffy-commentCard {
+  padding: 0 !important;
+  width: 100%;
+  border: none !important;
+  box-shadow: none !important;
+  .iffy-reviewTitle {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #3B3B3B;
+
+    .iffy-reviewName{
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+    }
+  }
+}
+
+.iffy-avatarRoot {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+.iffy-commentCardContent {
+  padding: 20px 15px 0px!important;
+}
+
+.iffy-detailedCommentCardContent {
+  .iffy-reviewTitle {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Mukta";
+    color: $comment_font_color;
+  }
+  @extend .iffy-commentCardContent;
+}
+
+.iffy-commentPage:hover {
+  overflow-y: overlay;
+}
+
+.iffy-childCommentContainer .commentTextContent {
+  font-family: "Mukta";
+  line-height: 23px;
+}
+
+.iffy-commentTextContent {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+  color: $comment_font_color;
+  word-break: break-word;
+  text-align: justify;
+  display: table-row;
+}
+
+.iffy-commentName {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: $comment_font_color;
+  letter-spacing: 0.001em;
+  display: block;
+}
+
+.iffy-childCommentContainer {
+  display: flex;
+  align-items: flex-start;
+  margin: 12px 0 0 0;
+}
+
+.iffy-childCommentName {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $comment_font_color;
+  display: block;
+}
+
+.iffy-childCommentAvatar {
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 100%;
+  svg {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 100%;
+  }
+}
+
+.iffy-commentLink {
+  font-family: "Open Sans" !important;
+  color: $font_color !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  &:focus {
+    outline: none !important;
+  }
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.iffy-replyComment {
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 7px 5px;
+  align-items: center !important;
+  height: 14px !important;
+  input {
+    border: none;
+    width: 100%;
+    line-height: initial;
+    margin: 0;
+    padding: 0;
+    &:focus {
+      box-shadow: none;
+      border-color: transparent;
+    }
+    &:focus-visible {
+      outline: none !important;
+    }
+    &::placeholder {
+      font-size: 13px !important;
+      padding: 4px !important;
+      margin: 0px !important;
+      text-align: start !important;
+    }
+  }
+  svg {
+    fill: #555;
+    font-size: 20px;
+  }
+}
+
+.iffy-ratingBox {
+  background-color: $background_color;
+  border-radius: 4px;
+  width: 134px !important;
+  height: 100% !important;
+  padding: 19px 0;
+}
+
+.iffy-ratingFormat {
+  margin-bottom: 7px !important;
+}
+
+.iffy-ratingNumber {
+  font-family: "Mukta" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 91px !important;
+  text-align: center !important;
+  letter-spacing: -0.05em !important;
+  color: $comment_font_color;
+  display: block;
+  margin: auto;
+  line-height: 57px !important;
+  margin-bottom: 5px !important;
+}
+
+.iffy-rationgSectionContainer {
+  margin: 15px 0;
+}
+
+.iffy-ratingList {
+  padding: 0 0 0 20px;
+  margin-top: -5px !important;
+}
+
+.iffy-averageRatingLabel {
+  font-family: "Open Sans" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  text-align: center !important;
+}
+
+.iffy-addReviewButton {
+  width: 56px;
+  height: 56px;
+  min-width: 0 !important;
+  position: fixed !important;
+  left: 275px;
+  bottom: 58px;
+  background-color: $background_color !important;
+  color: $font_color !important;
+}
+
+.iffy-shortCommentWrapper {
+  padding-bottom: 5px;
+  background: #fff;
+  margin-bottom: 5px;
+}
+
+.iffy-avatarWrapper {
+  margin-right: 10px;
+
+  img{
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.iffy-loadMore {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.iffy-emojiReactions {
+  display: flex;
+  align-items: center;
+  padding: 0 0 10px 0;
+  flex-wrap: wrap;
+}
+
+.iffy-emojis {
+  padding: 2px 5px;
+  margin: 2px 2px;
+  border: 2px solid rgb(34, 66, 112);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+.iffy-moreOptionsWrapper {
+  padding: 3px;
+  justify-content: end;
+}
+
+.iffy-addRemojiButton {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.iffy-attachments-wrapper {
+  width: 100%;
+
+  .gif-wrapper{
+    max-height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    // a{
+    //   width: 100px;
+
+    //   img {
+    //     object-fit: cover;
+
+    //     width: 100px;
+    //     height: 100px;
+    //   }
+    // }
+  }
+}
+
+.iffy-h2{
+  margin: 10px 0 6px;
+  text-align: center;
+}
+.iffy-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: -0.2px;
+  color: #6F7A91;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: 'Work Sans';
+}

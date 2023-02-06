@@ -1,0 +1,31 @@
+.attachmentsGalleryContainer {
+  .img-container {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 104px;
+
+    .img-box {
+      flex: 2;
+      margin-right: 3px;
+
+      &:nth-child(2) {
+        flex: 1.5
+      }
+
+      &:last-child {
+        flex: 2;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .fslightbox-source-inner {
+    width: 100%;
+
+    .fslightbox-source {
+      width: 100% !important;
+      object-fit: contain;
+    }
+  }
+}

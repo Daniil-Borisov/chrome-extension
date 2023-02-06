@@ -1,0 +1,52 @@
+$container_width: 344px;
+
+.headerLogoImg {
+  width: 18px;
+  height: 18px;
+}
+
+.displayName {
+  padding: 0 5px;
+}
+
+.iffy-mainCommentContainer {
+  span,h1,h2,h3,h4,h5,h6,img{
+    all:unset;
+  }
+}
+
+.iffy-mainCommentContainer {
+  all: unset;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  background-color: #F3F5F9 !important;
+  right: 10px;
+  width: 303px;
+  position: fixed;
+  height: 85%;
+  border: 0px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 18px !important;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  max-height: 905px;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f123;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+

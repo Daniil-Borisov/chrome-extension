@@ -1,0 +1,80 @@
+@import './Variables.scss';
+
+.reviewTitle {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  word-break: break-word;
+  color: $font_color;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 0.8em;
+  margin-bottom: 0.25rem;
+  border-radius: .125rem;
+
+  &:last-child {
+    margin-bottom: 0;
+    width: 80%;
+  }
+
+  &--username {
+    &:last-child {
+      width: 30%;
+    }
+  }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.fontNormal {
+  font-style: normal !important;
+  font-weight: normal !important;
+}
+
+.css-1pqm26d-MuiAvatar-img {
+  height: 26px !important;
+  width: 26px !important;
+  border-radius: 100%;
+}
+
+.absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.userLogoContainer {
+  position: relative;
+  width: 76px !important;
+  height: 76px;
+  background-color: $background_color;
+  border-radius: 50%;
+}
+
+.inviteFont {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $font_color;
+  margin-top: 12px;
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+.noInternet {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  &__card {
+    height: 238px;
+    width: 92%;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h4 {
+      // font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #000000;
+      margin: 10px 0;
+    }
+    h5 {
+      // font-family: 'Work Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: -0.2px;
+      color: #3b3b3b;
+      margin: 0;
+    }
+  }
+}

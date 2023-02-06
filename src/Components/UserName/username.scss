@@ -1,0 +1,30 @@
+.iffy-usernameWrapper{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  h4{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    margin: 0;
+  }
+
+  .iffy-usernameEditIcon{
+    position: absolute;
+    left: 101%;
+    width: 26px;
+    height: 26px;
+    background: #F3F5F9;
+    border-radius: 6.8421px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}

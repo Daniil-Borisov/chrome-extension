@@ -1,0 +1,89 @@
+@import '../../Assets/css/scss/Variables.scss';
+$full-width: 81px;
+$second-width: 19px;
+
+.iffy-floatingButtonContainer {
+  all: unset;
+  height: 100vh;
+  position: fixed;
+  width: 81px;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.iffy-floatButton {
+  background-color: transparent !important;
+  position: absolute !important;
+  right: 0;
+  transform: translate(0, -50%);
+  height: 89px;
+  width: 55px;
+  overflow: hidden;
+  padding: 0 !important;
+  border-radius: 12.6844px !important;
+  box-shadow: 0px 13.53px 27.0601px rgba(223, 226, 231, 0.6) !important;
+  box-sizing: border-box;
+
+  .firstSection {
+    width: $full-width - $second-width;
+    background-color: #f2f2f1;
+    color: black;
+    @extend .repeat;
+
+    &:hover,
+    &:active {
+      + .secondSection {
+        //@extend .secondClassInFocus;
+      }
+    }
+  }
+
+  button {
+    top: 50%;
+  }
+
+  .secondSection {
+    display: none;
+    width: 0px;
+    transition: visibility 0s, opacity 1s linear;
+    &:hover {
+      @extend .secondClassInFocus;
+    }
+  }
+}
+
+.iffy-floatButton .firstSection:hover + .secondSection {
+  display: block;
+  width: $second-width;
+  background-color: $font_color;
+  box-sizing: border-box;
+}
+
+.secondClassInFocus {
+  display: block;
+  width: $second-width;
+  background-color: $font_color;
+  box-sizing: border-box;
+  img {
+    left: 86%;
+    transform: translate(0, -50%);
+  }
+  @extend .repeat;
+}
+
+.iffy-buttonLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.repeat {
+  display: table-cell;
+  height: 100%;
+  box-sizing: border-box;
+}
